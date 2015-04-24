@@ -145,7 +145,7 @@ namespace HidSharp
         /// <inheritdoc />
         public override string ToString()
         {
-            return string.Format(CultureInfo.InvariantCulture, "{0} ({1}VID {2}, PID {3}, version {4})",
+            return string.Format(CultureInfo.InvariantCulture, "{0} ({1}VID 0x{2:x4}, PID 0x{3:x4}, version {4})",
                 Manufacturer.Length > 0 || ProductName.Length > 0 ? Manufacturer.Trim() + " " + ProductName.Trim() : "(unnamed)",
                 SerialNumber.Length > 0 ? "serial " + SerialNumber.Trim() + ", " : "", VendorID, ProductID, ProductVersion);
         }
